@@ -116,6 +116,7 @@ public class EstilosConvite extends AppCompatActivity{
             @Override
             protected void populateViewHolder(final ConviteAdapter viewHolder, final Estilos model, int position) {
                 viewHolder.txtMenuName.setText(model.getNome());
+                viewHolder.txtMenuPrice.setText(model.getPreco());
               /*  Picasso.get()
                         .load(model.getImagem())
                         .into(viewHolder.imageView);

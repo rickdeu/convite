@@ -15,6 +15,7 @@ public class ConviteAdapter  extends RecyclerView.ViewHolder{
 
 
     public TextView txtMenuName;
+    public TextView txtMenuPrice;
     public ImageView imageView;
 
     private AdapterView.OnItemClickListener itemClickListener;
@@ -23,6 +24,7 @@ public class ConviteAdapter  extends RecyclerView.ViewHolder{
     public ConviteAdapter(@NonNull View itemView) {
         super(itemView);
         txtMenuName=(TextView)itemView.findViewById(R.id.texte_view_name);
+        txtMenuPrice=(TextView)itemView.findViewById(R.id.texte_view_price);
         imageView=(ImageView)itemView.findViewById(R.id.image_flag);
 
         //item click

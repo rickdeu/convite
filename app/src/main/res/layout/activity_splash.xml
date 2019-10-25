@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/intro3"
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
     <RelativeLayout
@@ -33,10 +32,8 @@
             android:textSize="40sp"
             android:id="@+id/textoconvite1"
             android:layout_below="@id/imagem"
-            android:textStyle="bold"
-            android:fontFamily="cursive"
             android:textColor="@color/colorPrimaryDark"
-            android:text="WakongaApp"/>
+            android:text="Convites"/>
   <!--  <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -4,18 +4,20 @@
     <color name="transparent">#fff</color>
     <color name="backgroundFragment">#ff0000</color>
 
-    <color name="colorPrimary">#E91E63</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="colorPrimaryDark">#E91E63</color>
-
-    <!--  <color name="colorPrimary">#E91E63</color>
-    <color name="colorAccent">#FF4081</color>
-
-    <color name="colorPrimary">#F9F9F9</color>
-    <color name="colorPrimaryDark">#C6C6C6</color>
+    <color name="colorPrimary">#f9f9f9</color>
     <color name="colorAccent">#666666</color>
+    <color name="colorPrimaryDark">#c6c6c6</color>
+    <!--
+        <color name="colorPrimary">#E91E63</color>
+        <color name="colorAccent">#FF4081</color>
+        <color name="colorPrimaryDark">#E91E63</color>   -->
+        <!--  <color name="colorPrimary">#E91E63</color>
+        <color name="colorAccent">#FF4081</color>
+        <color name="colorPrimary">#F9F9F9</color>
+        <color name="colorPrimaryDark">#C6C6C6</color>
+        <color name="colorAccent">#666666</color>
 
-    -->
+        -->
     <color name="colorAccentSecondary">#ad1a7f</color>
     <color name="viewBg">#f8f8f8</color>
     <color name="white">#ffffff</color>

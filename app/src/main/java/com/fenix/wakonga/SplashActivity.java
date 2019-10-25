@@ -24,7 +24,6 @@ public class SplashActivity extends AppCompatActivity {
         //making acitivity full screen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
-
         mAuth= FirebaseAuth.getInstance();
         user=mAuth.getCurrentUser();
         int t =3000;//tempo de espera para abertura da tela principal
