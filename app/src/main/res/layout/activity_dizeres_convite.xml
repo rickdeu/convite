@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/my_bg_anim"
+    tools:context=".convites.DizeresConvite">
+
+
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+                android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/texto1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: Temos a honra de convidar o(a) senhor(a)"
+            android:imeActionId="6"
+            android:imeActionLabel="Frase de convite"
+            android:imeOptions="actionUnspecified"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/texto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: Temos a honra de convidar o(a) senhor(a)"
+            android:imeActionId="6"
+            android:imeActionLabel="Frase de convite"
+            android:imeOptions="actionUnspecified"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <EditText
+        android:background="@drawable/buttonstyle7"
+        android:id="@+id/mensagem3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="4"
+        android:hint="escreva aqui a sua frase "
+        android:gravity="center_vertical" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/guardarDados"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:padding="@dimen/dimen_10"
+                    android:background="@drawable/bg_gradient"
+                    android:text="@string/guardar"
+                    android:textStyle="bold"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:padding="@dimen/dimen_10"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Mais tarde"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/transparentpreto"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

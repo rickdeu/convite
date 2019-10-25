@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="40dp"
+        android:padding="20dp">
+    <TextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/lbl_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imgPartilhar"
+            android:layout_gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="60dp"
+            android:layout_height="20dp"
+            android:text="Guardar"
+            android:textSize="10dp"
+            app:srcCompat="@drawable/partilhar"
+            android:textColor="@color/primaryTextColor"
+            tools:ignore="VectorDrawableCompat" />
+        <ImageView
+            android:id="@+id/imgGuardar"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="60dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="30dp"
+            android:text="Guardar"
+            android:textSize="10dp"
+            app:srcCompat="@drawable/guardar"
+            android:textColor="@color/primaryTextColor"
+            tools:ignore="VectorDrawableCompat" />
+        <ImageView
+            android:id="@+id/imgWalper"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="20dp"
+            android:text="Guardar"
+            android:textSize="10dp"
+            app:srcCompat="@drawable/papel_parede"
+            android:textColor="@color/primaryTextColor"
+            tools:ignore="VectorDrawableCompat" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="40dp"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:fontFamily="cursive"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

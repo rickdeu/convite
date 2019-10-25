@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/scan_convidado"
+        android:title="Scanner"
+        android:icon="@drawable/scanner"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/opcoes_casamento"
+        android:id="@+id/id_opcoes"
+        android:title="Cerimônia"
+        app:showAsAction="collapseActionView"/>
+    <!--
+    <item
+        android:id="@+id/action_search"
+        android:title="Procurar"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+    <item
+       android:id="@+id/enviar_convite"
+       android:title="Enviar Convite"
+       app:showAsAction="never"
+       android:icon="@drawable/enviar_convite"/>
+
+  <item
+       android:icon="@drawable/definicoes_icon"
+       android:id="@+id/id_definicoes"
+       android:title="Definições"
+       app:showAsAction="never"/>
+   <item
+       android:icon="@drawable/partilhar_icon"
+       android:id="@+id/id_partilhar"
+       android:title="Partilhar"
+       app:showAsAction="never"/>-->
+</menu>

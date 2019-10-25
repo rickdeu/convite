@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".cerimonias.ActivityConservatoria">
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+    <ScrollView
+        android:id="@+id/login_form"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/cadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/nomeCons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/conservatoria"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/conservatoria"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Data Cerimônia Cívil"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:padding="@dimen/dimen_10"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <DatePicker
+                        android:layout_marginTop="1dp"
+                        android:id="@+id/dataCons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:calendarViewShown="false"
+                        android:datePickerMode="spinner" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Hora Cerimônia Cívil"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:padding="@dimen/dimen_10"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TimePicker
+                    android:id="@+id/horaCons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:timePickerMode="spinner"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/descCons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/desc"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/desc"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:visibility="gone"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <Button
+        android:id="@+id/guardarDados"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+        android:padding="@dimen/dimen_10"
+        android:background="@drawable/bg_gradient_button"
+                android:text="@string/guardar"
+                android:textStyle="bold"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_alignParentLeft="true"
+                android:textColor="@color/white"/>
+           <!--     <TextView
+                    android:padding="@dimen/dimen_10"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Mais tarde"
+                    android:textStyle="bold"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/transparentpreto"/>-->
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

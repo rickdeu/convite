@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/image_flag"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/loading"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/texte_view_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_alignParentBottom="true"
+        android:text="Convite"
+        android:textAlignment="center"
+        android:background="@color/transparent2"
+        android:fontFamily="cursive"
+        android:textColor="@color/white"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

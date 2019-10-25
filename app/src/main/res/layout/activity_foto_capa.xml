@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".noivos.FotoCapa">
+    <ScrollView
+        android:layout_margin="@dimen/dimen_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:id="@+id/fotocapa"
+            android:src="@drawable/addfoto"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_procurar_foto_capa"
+            android:textSize="28sp"
+            android:textAllCaps="true"
+            android:text="Escolher foto"
+            android:background="@color/transparentpreto"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/guardarFoto"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_gradient"
+            android:text="Definir foto capa"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

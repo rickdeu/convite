@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:backgroundTint="@color/transparentpreto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/id_convidados">
+<LinearLayout
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="1dp">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_height="50dp"
+            android:id="@+id/imgocorrencia"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/idocorrencia"
+            android:text="Ocorrencia"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:fontFamily="serif-monospace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

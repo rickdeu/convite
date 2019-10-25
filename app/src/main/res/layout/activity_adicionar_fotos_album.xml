@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg_anim"
+    tools:context=".galeria.AdicionarFotosAlbum">
+    <LinearLayout
+        android:id="@+id/content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/guardarFotos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:text="Guardar Fotos" />
+        <ImageButton
+            android:id="@+id/selectbtn"
+            android:layout_below="@id/guardarFotos"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="wrap_content"
+            android:src="@drawable/adocionarfoto"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/uploadimagens"
+        android:layout_below="@id/content"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

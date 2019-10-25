@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#fff</color>
+    <color name="backgroundFragment">#ff0000</color>
+
+    <color name="colorPrimary">#E91E63</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryDark">#E91E63</color>
+
+    <!--  <color name="colorPrimary">#E91E63</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimary">#F9F9F9</color>
+    <color name="colorPrimaryDark">#C6C6C6</color>
+    <color name="colorAccent">#666666</color>
+
+    -->
+    <color name="colorAccentSecondary">#ad1a7f</color>
+    <color name="viewBg">#f8f8f8</color>
+    <color name="white">#ffffff</color>
+    <color name="btn_disabled">#999</color>
+    <color name="lbl_value">#222222</color>
+    <color name="transparentpreto">#44000000</color>
+
+
+    <color name="primaryLightColor">#ff5131</color>
+    <color name="primaryTextColor">#ffffff</color>
+
+    <color name="pink">#fe104d</color>
+    <color name="backgroundcolor">#fcfcfc</color>
+
+
+    <color name="lightgray">#ededed</color>
+    <color name="deeppurple">#7c4dff</color>
+    <color name="yello">#ffb300</color>
+    <color name="green">#00bfa5</color>
+    <color name="colorBlack">#454040</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTransparentWhite">#cccccc</color>
+    <color name="colorTransparent">#eae9e9</color>
+
+    <color name="colorAmarelo">#a8ba03</color>
+    <color name="transparent2">#4f0e0d0e</color>
+</resources>

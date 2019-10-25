@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/textocasamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Temos a honra de convidar"
+            android:imeActionId="6"
+            android:textAllCaps="true"
+            android:imeOptions="actionUnspecified"
+            android:inputType="text"
+            android:maxLines="3"
+            android:singleLine="true" />
+</LinearLayout>

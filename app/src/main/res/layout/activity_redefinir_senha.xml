@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/my_bg_anim"
+    tools:context=".login.RedefinirSenha">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/login_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+        <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <AutoCompleteTextView
+            android:id="@+id/redefinrsenha"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:hint="@string/insiraseuemail"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/colorPrimary"
+            android:imeActionLabel="@string/insiraseuemail"
+            android:maxLines="1"
+            android:background="@drawable/buttonstyle2"
+            android:textColor="@color/white"
+            android:singleLine="true" />
+        <Button
+            android:drawableRight="@drawable/ic_send_black_24dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/redefinrsenhabtn"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstylepink"
+            android:text="Enviar Email"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

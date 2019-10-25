@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".scannerFragment.ConvidadoIntruso">
+    <!--
+<LinearLayout
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/nao_esta_na_lista"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/nao_esta_na_lista"/>
+    <TextView
+        android:id="@+id/id_intruso"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Não está na lista"/>
+  <VideoView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/video"/>
+</LinearLayout>-->
+    <VideoView
+        android:layout_centerInParent="true"
+        android:id="@+id/simpleVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

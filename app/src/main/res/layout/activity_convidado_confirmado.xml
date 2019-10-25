@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/intro3"
+    android:id="@+id/fundo_principalConvidado"
+    android:orientation="vertical"
+    tools:context=".scannerFragment.ConvidadoConfirmado">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@color/transparentpreto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="405dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_gradient">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/imagemsecundario"
+                            android:layout_width="match_parent"
+                            android:contentDescription="@null"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/logoeditado"
+                            app:layout_collapseMode="parallax"
+                            android:layout_height="match_parent"/>
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_detalhe_convidado"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/logoeditado"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp" />
+                        <TextView
+                            android:id="@+id/nome_detalhe_convidado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:text=""
+                            android:textColor="#fff"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/sobrenome_detalhe_convidado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text=""
+                            android:textColor="#fff"
+                            android:textSize="21sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="275dp"
+                    android:layout_marginRight="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Acompanhante"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/acompanhante_detalhe_convidado"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="serif-monospace"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center"
+                                android:text="Quantidade"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/numero_convidados_detalhe"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="serif-monospace"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/enviar_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/email" />
+                    <TextView
+                        android:id="@+id/email_detalhe_convidado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="3"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/chamar_convidado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/chamar" />
+
+                    <TextView
+                        android:id="@+id/telefone_detalhe_convidado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="4"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal"
+                  >
+                    <Button
+                        android:id="@+id/convidado_confirmado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_margin="@dimen/dimen_10"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/bg_gradient_button"
+                        android:text="Confirmar"
+                        android:textColor="#fff" />
+                <!--    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/bg_gradient_button"
+                        android:text="Confirmar"
+                        android:textColor="#fff" />-->
+                </RelativeLayout>
+            </LinearLayout>
+<LinearLayout
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewocorrencia"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

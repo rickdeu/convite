@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "612630605049",
+    "firebase_url": "https://wakonga-e3e9c.firebaseio.com",
+    "project_id": "wakonga-e3e9c",
+    "storage_bucket": "wakonga-e3e9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612630605049:android:14e0de5b471e14d5",
+        "android_client_info": {
+          "package_name": "com.fenix.wakonga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612630605049-hauvcs563452q1k31kourlsfesoj3bm1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fenix.wakonga",
+            "certificate_hash": "6decc5be060282442de3efd6dd620900f1b2343f"
+          }
+        },
+        {
+          "client_id": "612630605049-kc95rpaat3kf0v9s0kkdcaf76i18b30n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiY5Ek8cE9LP3Bw30DPAHYQnOK6uSgs2s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "612630605049-kc95rpaat3kf0v9s0kkdcaf76i18b30n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    tools:context=".convidadoFragment.ActivityAdicionarConvidado">
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/cadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/nome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nome"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/nome"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/sobrenome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/sobrenome"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/sobrenome"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email (opcional)"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/prompt_email"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/cpp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:ccp_autoDetectCountry="true"
+        app:ccp_autoDetectLanguage="true"
+        />
+    
+
+        <EditText
+            android:id="@+id/telefone_convidado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/telefone"
+            android:inputType="number"
+            android:maxLines="1"
+            android:imeActionLabel="@string/telefone"
+            android:singleLine="true" />
+
+
+</LinearLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/acompanhante"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Acompanhante(opcional)"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/acompanhante"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/numero_convidados"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/quantidade"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/quantidade"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/id_foto_convidado"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/addfoto"
+        android:layout_marginLeft="@dimen/dimen_10"
+        />
+    <TextView
+        android:id="@+id/selecionarFoto"
+        style="?android:textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selecione"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_gravity="center_vertical"
+       />
+
+</LinearLayout>
+
+
+
+
+                      <Button
+                          android:id="@+id/guardarDados"
+                          style="?android:textAppearanceSmall"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="16dp"
+                          android:background="@drawable/bg_gradient_button"
+                          android:text="@string/guardar"
+                          android:textStyle="bold"
+                          android:textColor="@color/white"/>
+            <!--  <Button
+                  android:id="@+id/criar_conta"
+                  style="?android:textAppearanceSmall"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="16dp"
+                  android:textColor="@color/colorPrimary"
+                  android:text="Pretende casar?"
+                  android:background="@color/transparent"
+                  android:fontFamily="sans-serif"
+                  android:textStyle="bold" />
+  -->
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

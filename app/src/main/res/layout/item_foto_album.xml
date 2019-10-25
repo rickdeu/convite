@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+android:layout_width="match_parent"
+    android:layout_margin="1dp"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <ImageView
+            android:id="@+id/id_imagem_album"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/album"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/id_texto_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Imagem descricao"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:background="@color/transparentpreto"
+            android:fontFamily="cursive"
+            android:layout_below="@id/id_imagem_album"/>
+</RelativeLayout>
+</LinearLayout>

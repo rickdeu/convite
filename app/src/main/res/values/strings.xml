@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Wakonga</string>
+    <string name="title_activity_login">Login</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="hora">Hora</string>
+    <string name="casa">Casa</string>
+    <string name="bairro">Bairro</string>
+    <string name="foto">Foto</string>
+    <string name="data_nascimento">Data Nascimento</string>
+    <string name="bi">Bilhete de Identidade</string>
+
+    <string name="texto_lgin">Benvindo ao  wakonga, o seu convite eletrônico para casamentos, noivados
+    e muito mais, se pretende casar, o WakongaApp é a solução
+    ideal!</string>
+
+
+    <string name="make_an_order">Make an Order</string>
+    <string name="dialog_title">Selecionar Convidados</string>
+    <string name="ok_label">Enviar</string>
+    <string name="dismiss_label">Canc</string>
+    <string name="clear_all_label">Anular</string>
+    <string name="empty" />
+
+    <string name="desc">Descrição</string>
+    <string name="prompt_password">Palavra-passe</string>
+    <string name="verificar_palavra_passe">Confirmar senha</string>
+
+    <string name="nome">Nome</string>
+    <string name="sobrenome">Sobrenome</string>
+    <string name="conservatoria">Nome conservatoria</string>
+    <string name="igreja">Igreja</string>
+    <string name="selecione">selecione uma foto</string>
+
+    <string name="telefone">Telefone</string>
+    <string name="acompanhante">Acompanhante</string>
+    <string name="guardar">Guardar Dados</string>
+    <string name="seguinte">Seguinte</string>
+    <string name="grau">Grau Parentesco(opcional)</string>
+
+    <string name="action_sign_in_short">Guardar</string>
+
+    <string name="dados_conservatoria">Conservatoria</string>
+
+
+    <string name="action_sign_in">Entrar</string>
+    <string name="data">Data</string>
+    <string name="salao">Salão</string>
+
+    <string name="nomeinvalido">Nome invalido</string>
+    <string name="sobrenomeinvalido">Sobrenome invalido</string>
+
+    <string name="nomeacompanhanteinvalido">Nome invalido</string>
+    <string name="emailinvalido">Email invalido</string>
+    <string name="telefoneinvalido">Telefone invalido</string>
+
+
+    <string name="error_invalid_email">Email invalido</string>
+    <string name="error_invalid_password">Palavra-passe invalida</string>
+    <string name="error_incorrect_password">Password incorreta</string>
+    <string name="error_field_required">Campo obrigatorio</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main">Convidados</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Wakonga Convite</string>
+    <string name="nav_header_subtitle">wakonga@gmail.cim</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_ticket">Book Ticket</string>
+    <string name="lbl_duration">DURATION</string>
+    <string name="lbl_genre">GENRE</string>
+    <string name="lbl_rating">RATING</string>
+    <string name="lbl_price">PRICE</string>
+    <string name="btn_buy_now">BUY NOW</string>
+    <string name="btn_coming_soon">COMING SOON</string>
+    <string name="msg_no_ticket_found">No ticket found. Try scanning the QR Codes from http://api.androidhive.info/qrcodes/</string>
+    <string name="ler_codigo_qr_descricao">Clique no logo para confirmar convidado!</string>
+    <string name="ler_codigo">Ler Codigo</string>
+    <string name="quantidade">Quantidade (Maximo 5)</string>
+    <string name="email_pessoal">Email Pessoal</string>
+    <string name="data_copo_agua">Data Copo da Água(Clique para selecionar uma data)</string>
+    <string name="data_cerimonia_civil">Insira uma data</string>
+    <string name="data_cerimonia_religiosa">Data Cerimonia Religiosa(Clique para selecionar data)</string>
+    <string name="frase_convite">Frase para o convite</string>
+    <string name="id_client">612630605049-kc95rpaat3kf0v9s0kkdcaf76i18b30n.apps.googleusercontent.com</string>
+    <string name="senha">Senha</string>
+    <string name="insiraseuemail">digite o seu e-mail</string>
+
+
+</resources>
