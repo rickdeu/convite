@@ -5,7 +5,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.fenix.wakonga"
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 28
         versionCode 46
         versionName "1.0"
@@ -16,7 +16,7 @@ android {
     packagingOptions {
         //pickFirst 'META-INF/LICENSE.txt' // picks the JavaMail license file
         exclude 'META-INF/DEPENDENCIES'
-       /* exclude 'META-INF/NOTICE'
+        /* exclude 'META-INF/NOTICE'
         exclude 'META-INF/NOTICE.txt'
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/LICENSE.txt'*/
@@ -38,6 +38,10 @@ android {
         }
     }
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 
 
     /* flavorDimensions "version"
@@ -56,9 +60,22 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation('com.mikepenz:materialdrawer:6.0.6@aar') {
+        transitive = true
+    }
+
+    //Intro Animation API
+    implementation 'com.eftimoff:android-pathview:1.0.8@aar'
+    implementation 'com.blankj:utilcode:1.23.7'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+
     //bibliotecas de design
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'androidx.cardview:cardview:1.0.0'
@@ -113,5 +130,6 @@ dependencies {
 
     //slideshoe
     implementation 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+
 
 }

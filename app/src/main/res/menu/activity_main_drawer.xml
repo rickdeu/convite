@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
-    <group
-        android:checkableBehavior="single">
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:checkableBehavior="single">
         <item
             android:id="@+id/id_home"
             android:icon="@drawable/ic_home_black_24dp"
@@ -21,44 +19,43 @@
             android:icon="@drawable/editar_convidado"
             android:title="Foto Capa" />
 
-    <item
-        android:title=""
-        >
-        <menu>
-            <item
-                android:id="@+id/id_dados_noivo"
-                android:icon="@drawable/convidado"
-                android:title="Dados Noivos" />
-           <item
-               android:id="@+id/id_dados_noiva"
-               android:icon="@drawable/convidados"
-                android:title="Dados Noiva" />
-        </menu>
-    </item>
-        <item android:title="">
-            <menu>
-                <item
-                    android:id="@+id/id_cerimonia_civil"
-                    android:icon="@drawable/ic_home_black_24dp"
-                    android:title="Cerimônia Cívil" />
-                <item
-                    android:id="@+id/id_cerimonia_religiosa"
-                    android:icon="@drawable/ic_home_black_24dp"
-                    android:title="Cerimônia Religiosa" />
-                <item
-                    android:id="@+id/id_copo_agua"
-                    android:icon="@drawable/ic_home_black_24dp"
-                    android:title="Copo D'Água" />
-            </menu>
-        </item>
-    <item android:title="">
-        <menu>
-            <item
-                android:id="@+id/nav_sair"
-                android:icon="@drawable/sair"
-                android:title="Terminar Sessão" />
+        <item
+            android:id="@+id/id_dados_noivo"
+            android:icon="@drawable/convidado"
+            android:title="Dados Noivos" />
+        <item
+            android:id="@+id/id_dados_noiva"
+            android:icon="@drawable/convidados"
+            android:title="Dados Noiva" />
 
-        </menu>
-    </item>
+        <item
+            android:id="@+id/id_cerimonia_civil"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Cerimônia Cívil" />
+        <item
+            android:id="@+id/id_cerimonia_religiosa"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Cerimônia Religiosa" />
+        <item
+            android:id="@+id/id_copo_agua"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Copo D'Água" />
+    </group>
+
+
+    <group android:checkableBehavior="single" android:id="@+id/nav_grp2">
+
+       <!-- <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_about_us"
+           android:title="@string/navigation_drawer_about_us" />
+       --> <item
+            android:id="@+id/nav_sair"
+            android:icon="@drawable/sair"
+            android:title="Terminar Sessão" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/navigation_drawer_settings"/>
     </group>
 </menu>

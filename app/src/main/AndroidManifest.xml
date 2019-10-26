@@ -3,10 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.fenix.wakonga">
     <!-- To auto-complete the email text field in the login form with the user's emails -->
-
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -14,12 +13,11 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <uses-feature android:name="android.hardware.Camera" />
 
     <meta-data
-
         android:name="com.google.firebase.ml.vision.DEPENDENCIES"
         android:value="text" />
 
@@ -33,64 +31,84 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".login.ProfileActivity" />
+        <activity
             android:name=".galeria.AdicionarFotosAlbum"
-            android:label="Adionar Fotos" />
+            android:label="Adionar Fotos"
+            android:theme="@style/AppThemeNoBar" />
         <activity
             android:name=".convites.DizeresConvite"
-            android:label="Escreva seu texto" />
+            android:label="Escreva seu texto"
+            android:theme="@style/AppThemeNoBar" />
         <activity
             android:name=".noivos.FotoCapa"
             android:label="Definir foto de Capa"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppThemeNoBar" />
         <activity
             android:name=".convites.EstilosConvite"
             android:label="Selecionar Convite"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppThemeNoBar" />
         <activity
             android:name=".informacaoCasamento.NoivosCasamento"
             android:label="Noivos"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppThemeNoBar" />
         <activity
             android:name=".convidadoFragment.ListaConvidados"
             android:label="Lista de Convidados"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".convidadoFragment.ConviteConvidado" />
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppThemeNoBar" />
+        <activity
+            android:name=".convidadoFragment.ConviteConvidado"
+            android:theme="@style/AppThemeNoBar" />
         <activity
             android:name=".servicos.DetalheServico"
-            android:parentActivityName=".servicos.CategoriaServico" />
+            android:parentActivityName=".servicos.CategoriaServico"
+            android:theme="@style/AppThemeNoBar" />
         <activity
             android:name=".servicos.CategoriaServico"
             android:label="Serviços de Casamento"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppThemeNoBar" />
         <activity
             android:name=".servicos.ListaServicos"
             android:label="Serviços de Casamento"
-            android:parentActivityName=".servicos.CategoriaServico" />
+            android:parentActivityName=".servicos.CategoriaServico"
+            android:theme="@style/AppThemeNoBar" />
         <activity
             android:name=".scannerFragment.ConvidadoIntruso"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".scannerFragment.ConvidadoConfirmado" />
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppThemeNoBar" />
+        <activity
+            android:name=".scannerFragment.ConvidadoConfirmado"
+            android:theme="@style/AppThemeNoBar" />
         <activity
             android:name=".login.RedefinirSenha"
             android:label="Recuperar Senha"
-            android:parentActivityName=".login.LoginActivity" />
-        <activity android:name=".SplashActivity">
+            android:parentActivityName=".login.LoginActivity"
+            android:theme="@style/AppThemeNoBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppThemeNoBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".login.LoginActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity
-            android:name=".MainActivity"
-            android:label="Wakonga"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppThemeNoBar" />
         <activity
             android:name=".cerimonias.ActivityConservatoria"
             android:label="Cerimônia Cívil"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppThemeNoBar" />
         <activity
             android:name=".cerimonias.ActivityIgreja"
             android:parentActivityName=".MainActivity" />
@@ -117,14 +135,14 @@
         <activity
             android:name=".galeria.ActivityVideos"
             android:label="Galeria de Videos"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppThemeNoBar" />
         <activity
             android:name=".slide.Slide"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".convidadoFragment.DetalheConvidado"
-            android:parentActivityName=".MainActivity" />
-        <!-- <activity android:name=".galeria.VisualizarImagem"/>-->
+            android:parentActivityName=".MainActivity" /> <!-- <activity android:name=".galeria.VisualizarImagem"/> -->
         <activity
             android:name=".scannerFragment.ScanActivity"
             android:parentActivityName=".MainActivity"
@@ -133,6 +151,7 @@
             android:name=".login.LoginActivityCadastro"
             android:parentActivityName=".login.LoginActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.fenix.wakonga"
@@ -142,7 +161,6 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_provider_paths" />
         </provider>
-
     </application>
 
 </manifest>

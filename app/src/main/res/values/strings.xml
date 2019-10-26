@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Wakonga</string>
+    <string name="app_name">Convites</string>
     <string name="title_activity_login">Login</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
@@ -89,6 +89,25 @@
     <string name="id_client">612630605049-kc95rpaat3kf0v9s0kkdcaf76i18b30n.apps.googleusercontent.com</string>
     <string name="senha">Senha</string>
     <string name="insiraseuemail">digite o seu e-mail</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="navigation_drawer_settings">Definições</string>
+    <string name="positive_yes">Sim</string>
+    <string name="negative_no">Não</string>
+    <string name="signout_message">Tem certeza que deseja terminar sessão?</string>
+    <string name="positive_button">OK</string>
+    <string name="casamentos">Casamento</string>
+    <string name="servicos">Serviço</string>
+    <string name="festas">Festa</string>
+    <string name="convites">Convite</string>
+    <string name="after_party">After Party</string>
+    <string name="aniversarios">Aniversário</string>
+    <string name="baptismo">Baptimo</string>
+    <string name="infantil">Infantil</string>
+    <string name="religiosos">Religioso</string>
+    <string name="others">Outras actividades festivas</string>
 
 
 </resources>

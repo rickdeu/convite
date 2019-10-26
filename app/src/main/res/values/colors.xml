@@ -4,9 +4,12 @@
     <color name="transparent">#fff</color>
     <color name="backgroundFragment">#ff0000</color>
 
-    <color name="colorPrimary">#E91E63</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="colorPrimaryDark">#E91E63</color>
+    <color name="colorPrimary">#E14658</color>
+    <color name="colorAccent">#3F3250</color>
+    <color name="colorPrimaryDark">#22252C</color>
+
+    <color name="colorLightPrimary">#FFECB3</color>
+    <color name="colorPrimaryText">#212121</color>
 
     <!--  <color name="colorPrimary">#E91E63</color>
     <color name="colorAccent">#FF4081</color>
@@ -14,6 +17,11 @@
     <color name="colorPrimary">#F9F9F9</color>
     <color name="colorPrimaryDark">#C6C6C6</color>
     <color name="colorAccent">#666666</color>
+
+<color name="colorPrimary">#FFc107</color>
+    <color name="colorAccent">#FFEB3B</color>
+    <color name="colorPrimaryDark">#FFA000</color>
+
 
     -->
     <color name="colorAccentSecondary">#ad1a7f</color>
@@ -42,4 +50,7 @@
 
     <color name="colorAmarelo">#a8ba03</color>
     <color name="transparent2">#4f0e0d0e</color>
+
+    <!--Cores extras adicionadas por Salomao Pena-->
+    <color name="transparent_black">#CC000000</color>
 </resources>

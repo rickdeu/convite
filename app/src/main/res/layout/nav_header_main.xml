@@ -1,44 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/nav_header_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/id_nav"
     android:background="@drawable/intro3"
+    android:layout_height="@dimen/nav_header_height"
     android:gravity="bottom"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark">
-<LinearLayout
+    android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:orientation="vertical"
-    android:background="@color/transparentpreto"
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/nav_header_height">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageLogin"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:padding="10dp"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:alpha="1"
         android:contentDescription="@string/nav_header_desc"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:src="@drawable/logoeditado"/>
-    <TextView
+        android:src="@drawable/profile"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/colorPrimaryText"
+        app:civ_border_overlay="true"
+        app:civ_fill_color="@color/colorPrimary"/>
+
+    <com.fenix.wakonga.views.FontView
         android:id="@+id/nomeLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:fontFamily="monospace"
-        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:shadowColor="@color/white"
+        android:paddingBottom="@dimen/nav_header_vertical_spacing"
         android:text="@string/nav_header_title"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-    <TextView
-        android:id="@+id/emailLogin"
-        android:textColor="@color/white"
-        android:fontFamily="cursive"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/nav_header_subtitle" />
-</LinearLayout>
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/white" />
 </LinearLayout>

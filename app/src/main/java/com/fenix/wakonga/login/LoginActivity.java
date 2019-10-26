@@ -613,4 +613,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         MultiDex.install(this);
     }
 
+
+    public static Intent getStartIntent(Context context) {
+        Intent intent = new Intent(context, LoginActivity.class);
+        return intent;
+    }
 }
