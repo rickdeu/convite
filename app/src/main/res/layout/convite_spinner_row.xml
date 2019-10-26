@@ -1,27 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="250dp">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <ImageView
-        android:id="@+id/image_flag"
-        android:layout_width="match_parent"
-        android:scaleType="fitXY"
-        android:src="@drawable/loading"
-        android:layout_height="match_parent"/>
-    <TextView
-        android:id="@+id/texte_view_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:layout_alignParentBottom="true"
-        android:text="Convite"
-        android:textAlignment="center"
-        android:background="@color/transparent2"
-        android:fontFamily="cursive"
-        android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/image_flag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/logoeditado" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent2"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/texte_view_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="cursive"
+                android:text="Convite"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/texte_view_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="cursive"
+                android:text="Preço"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
